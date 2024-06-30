@@ -1,0 +1,146 @@
+﻿/* Assign images*/
+
+/*#logo{
+    content: url("logo/logo.svg");
+}*/
+
+
+/* Tag styles */
+
+body {
+    background: url("images/backgroudtexture.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+marquee {
+    background-color: wheat;
+    width: 100%;
+    font-size: 50px;
+    direction: rtl;
+    height: fit-content;
+}
+/* Class styles */
+
+.bigcontent {
+    font-size: 50px;
+}
+/* Id styles */
+
+#scrolltextdiv {
+    background-color: bisque;
+    font-size: 10px;
+    height: max-content;
+    vertical-align:central;
+
+   
+}
+    #scrolltextdiv p {
+        animation: marquee 10s linear infinite;
+        font-size: 30px;
+        color: white;
+        vertical-align: central;
+        /*content to tilt the scrolling text*/
+
+        -ms-transform: rotate(-3deg); /* IE 9 */
+        -webkit-transform: rotate(-3deg); /* Safari */
+        transform: rotate(-3deg); /* Standard syntax */
+    }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Animations using key frames */
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+        nav ul li a {
+            color: whitesmoke;
+            position: relative;
+            padding: 5px 0;
+        }
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background: wheat;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    background-size: 152% 100%;
+    border: 2px solid #fd4766;
+}
+
+/*h1 {
+    font-size: 100px;
+}*/
+
+#intro {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    /*align-content:center;*/
+    /*vertical-align: middle;*/
+}
+
+    #intro h1 {
+        font-size: 150px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        /*line-height:50px;*/
+        text-align: center;
+        /* Apply animation to this element */
+        animation: example1 10s linear;
+    }
+
+#aboutdivup {
+    background: white;
+    color: saddlebrown;
+    display: flex;
+}
+
+#aboutsubdivleft, #aboutsubdivright {
+    flex: 50%;
+}
+/* Move it (define the animation) */
+@keyframes example1 {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#myimg {
+    content: url("icons/blackstars.svg");
+    vertical-align: middle;
+}
